@@ -1,0 +1,118 @@
+/* global */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #101214;
+  color: #7a7c80;
+}
+
+h2,
+.white {
+  color: #fff;
+}
+
+a {
+  color: #7a7c80;
+  text-decoration: none;
+}
+
+.container {
+  background-color: #101214;
+  color: #7a7c80;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/* section l */
+
+.section-l {
+  padding-top: 40vh;
+  text-align: center;
+  background-color: #101214;
+  color: #7a7c80;
+}
+
+.section-l p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  color: gray;
+  margin: 0;
+}
+
+.section-l h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.section-l a {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px;
+}
+
+/* section 2 */
+.section-r {
+  background-color: #101214;
+  color: #7a7c80;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.section-r iframe {
+  position: relative;
+  }
+
+.section-r h2 {
+  font-size: 1.7rem;
+}
+
+.section-r p {
+  font-size: 1.1rem;
+}
+
+.section-r a {
+  font-size: 1.2rem;
+  padding-left: 0;
+}
+
+/* animations / utilities */
+.section-r a:hover {
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.section-l a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.white:hover {
+  position: relative;
+  padding-left: 10px;
+}
+
+/* media queres */
+@media (max-width: 200px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .section-l {
+    padding: 0;
+    padding-top: 5rem;
+  }
+  .section-r {
+    padding: 0;
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+  }
+}
